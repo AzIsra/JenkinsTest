@@ -16,7 +16,7 @@ pipeline {
                     }
 
                     // Example build command
-                    sh 'make build'
+                    sh 'echo "Hello World"'
                 }
             }
 
