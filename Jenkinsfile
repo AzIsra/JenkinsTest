@@ -17,11 +17,11 @@ pipeline {
             }
             post {
                 success {
-                    githubNotify context: 'Test', status: 'SUCCESS', description: 'All tests passed', targetUrl: "${env.BUILD_URL}"
+                    githubNotify context: 'Test', status: 'SUCCESS', description: 'All tests passed', targetUrl: "https://github.com/AzIsra/JenkinsTest.git"
                 }
 
                 failure {
-                    githubNotify context: 'Test', status: 'FAILURE', description: 'Some tests failed', targetUrl: "${env.BUILD_URL}"
+                    githubNotify context: 'Test', status: 'FAILURE', description: 'Some tests failed', targetUrl: "https://github.com/AzIsra/JenkinsTest.git"
                 }
         }
     }
